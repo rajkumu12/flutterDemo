@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttermaindemo/pages/settings.dart';
 
 class SettingsUI extends StatelessWidget {
   @override
@@ -50,7 +49,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 0, top: 25, right: 0),
+        padding: EdgeInsets.only(left: 0, top: 20, right: 0),
         child: GestureDetector(
           onTap: () {
             FocusScope.of(context).unfocus();
@@ -296,7 +295,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
     );
   }
 }
-
 Row buildNotificationOptionRow(String title, bool isActive) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
